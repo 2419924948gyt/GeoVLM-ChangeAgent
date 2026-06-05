@@ -1,0 +1,22 @@
+vlm_backends:
+  heuristic:
+    description: Local rule-based explanation backend used for CPU demos.
+  qwen_vl:
+    description: Qwen-VL API integration through OpenAI-compatible chat completions.
+    provider: dashscope_or_openai_compatible
+    env:
+      - DASHSCOPE_API_KEY
+      - VLM_API_KEY
+      - VLM_API_BASE_URL
+      - VLM_API_MODEL
+  internvl:
+    description: Placeholder for InternVL integration.
+    provider: transformers
+
+vision_backends:
+  numpy_difference:
+    description: Lightweight pre/post difference mask.
+  sam_assisted:
+    description: Future SAM/SAM2 region proposal backend.
+  change_detector:
+    description: Future supervised change detection model backend.
