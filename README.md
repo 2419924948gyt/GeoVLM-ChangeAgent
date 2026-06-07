@@ -9,6 +9,29 @@ This is not a self-trained foundation model. It is an engineering prototype that
 shows how to connect computer vision, visual evidence, RAG-style domain context,
 and a multimodal large model into an end-to-end application.
 
+## Demo Preview
+
+![GeoVLM-ChangeAgent demo](docs/assets/github_demo_qwen_api_result.png)
+
+## Web Demo
+
+This repository provides a local Gradio web demo.
+
+```bash
+python app.py
+```
+
+Then open:
+
+```text
+http://127.0.0.1:7860
+```
+
+Two modes are available:
+
+- `heuristic`: local CPU mode, no API key required.
+- `qwen_api`: Qwen-VL report mode, requires `DASHSCOPE_API_KEY`.
+
 ## Demo Result
 
 The current demo produces:
@@ -29,16 +52,6 @@ lower_left: 9.39%
 upper_left: 0.00%
 upper_right: 0.00%
 ```
-
-Validated API demo report:
-
-```text
-outputs/api_demo_v3/report.md
-```
-
-### Qwen API Demo
-
-![Qwen API demo](docs/assets/github_demo_qwen_api_result.png)
 
 ### Architecture
 
